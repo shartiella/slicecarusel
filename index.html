@@ -1,0 +1,363 @@
+
+<!DOCTYPE html>
+<html lang="he">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>תצפית אסטרונומית במצפה משואה</title>
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <script src="scorm.js" type="text/javascript"></script>
+      
+      <script type="text/javascript">
+      var scormApi = new Scorm({
+          exitValue: null,
+          score: {
+              min: 0,
+              max: 100
+          },
+          debugger: function (err, msg, param, value) {
+              console.log('scorm err', err, param, value);
+          }
+      }, function (scormApi, message) { });
+
+      function initCourse() {
+          //scorm.init returns a boolean
+          lmsConnected = scormApi.initialize();
+          //If the scorm.init function succeeded...
+          if (lmsConnected) {
+              console.log('lmsConnected: ', lmsConnected);
+          }
+          window.realScore = -1;
+      }
+      function moreScore(num) {
+        if(window.realScore == -1){
+          window.realScore = 0;
+        }
+
+          window.realScore = window.realScore + num
+      }
+
+      function lessScore(num) {
+          window.realScore = window.realScore - num
+      }
+
+
+      function exitFunc() {
+        console.log('exittttttt');
+
+          if (scormApi.version !== null) {
+              scormApi.success("passed");
+              scormApi.status("completed");
+              if(window.realScore == -1){
+
+              }else{
+                scormApi.score(window.realScore);
+              }
+          }
+         
+          window.close();
+      }
+
+
+
+
+
+      // my edit for leumi
+      initCourse();
+     // moreScore(100);
+  </script>
+
+                
+      
+</head>
+<body>
+  <div id="loader">
+    <div class="preloader"></div>
+  </div>
+  <div id="LinkUrl"></div><article _ngcontent-c1="" class="caruselTheme" id="61d818c44766d0002aee07ee"><div _ngcontent-c1="" class="bannerFull banner-principal"><div _ngcontent-c1="" class="carousel slide" data-interval="false" data-ride="carousel" data-wrap="false" id="carousel-61d818c44766d0002aee07ee"><div _ngcontent-c1="" class="downSectionFixed"><img _ngcontent-c1="" class="bottomLeftLogo" id="logoID" src="uploads/1641560257462.png"><ol _ngcontent-c1="" class="carousel-indicators"><!----><li _ngcontent-c1="" class="caruselIndicator noSwipe ng-star-inserted active" data-target="#carousel-61d818c44766d0002aee07ee" data-slide-to="0"></li><li _ngcontent-c1="" class="caruselIndicator noSwipe ng-star-inserted" data-target="#carousel-61d818c44766d0002aee07ee" data-slide-to="1"></li></ol><a _ngcontent-c1="" class="left carousel-control caruselILeft" data-slide="prev" id="leftArrowBTN" role="button" href="#carousel-61d818c44766d0002aee07ee" style="display: none;"><i _ngcontent-c1="" class="fas fa-angle-left"></i><div _ngcontent-c1="" class="nextText hidden-xs newStyle-display-none">הבא</div></a><a _ngcontent-c1="" class="right carousel-control caruselIRight" data-slide="next" id="rightArrowBTN" role="button" href="#carousel-61d818c44766d0002aee07ee" style=""><i _ngcontent-c1="" class="fas fa-angle-right"></i><span _ngcontent-c1="" class="prevText hidden-xs newStyle-display-none">הקודם</span></a></div><div _ngcontent-c1="" class="carousel-inner" role="listbox"><!----><div _ngcontent-c1="" class="item ng-star-inserted active"><div _ngcontent-c1="" id=""><div _ngcontent-c1="" class="optionsControl-carusel display-none  CancelDisplayNone"><button _ngcontent-c1="" class="backgroundTransperent ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed"><!----><i _ngcontent-c1="" class="anticon anticon-left ng-star-inserted" style="color: rgb(0, 0, 0); display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-37 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" class="backgroundTransperent ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed"><!----><i _ngcontent-c1="" class="anticon anticon-eye-o ng-star-inserted" style="color: rgb(0, 0, 0); display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-38 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-edit ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-39 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-scan ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-40 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-download ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-41 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-copy ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-42 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" nz-button="" nz-popconfirm="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-delete ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-43 ng-star-inserted"><!----></nz-tooltip><nz-popconfirm _nghost-c20="" class="ng-tns-c20-44 ng-star-inserted"><!----></nz-popconfirm><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-plus ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-45 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg"><!----><i _ngcontent-c1="" class="anticon anticon-video-camera ng-star-inserted" hidden="" style="display: inline-block;"></i><span><i _ngcontent-c1="" class="anticon anticon-picture"></i></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-46 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="fas fa-globe ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-47 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-solution ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-48 ng-star-inserted"><!----></nz-tooltip><nz-button-group _ngcontent-c1=""><div class="ant-btn-group"><input _ngcontent-c1="" class="colorPicker ant-btn-lg ant-btn-dashed" nz-tooltip="" nzplacement="bottom" style="background: rgb(223, 235, 249);"><nz-tooltip _nghost-c19="" class="ng-tns-c19-49 ng-star-inserted"><!----></nz-tooltip></div></nz-button-group></div><div _ngcontent-c1="" class="slider-conteudo-html"><div _ngcontent-c1="" class="container-fluid slider-grande-modelo1 background-carusel " style="background: rgb(223, 235, 249);"><div _ngcontent-c1="" class="container-carusel " style="background-image: url(&quot;uploads/1641560450905.jpg&quot;);"><div _ngcontent-c1="" class="col-xs-10 col-sm-4 padding-0 floatRight"><div _ngcontent-c1="" class="vidChoose"><video _ngcontent-c1="" class="video100  bgIMG" loop="" muted="" id="61d818c74766d0002aee07f2_vid1" src="uploads/1641836068540.mp4"><source _ngcontent-c1="" class="LinkUrlChange" type="video/mp4" src="uploads/1641836068540.mp4"> אנו מצטערים, הדפדפן שלך אינו תומך ב </video><div _ngcontent-c1="" class=" display-none  Not-ok CancelDisplayNone uploadBtnFloat"><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzshape="circle" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-circle ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-video-camera ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"><!----></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-50 ng-star-inserted"><!----></nz-tooltip></div></div><div _ngcontent-c1="" class="imgChoose" hidden=""><div _ngcontent-c1="" class="bgIMG img-responsive margin-top-20 LinkUrlChange" style="background-position: center center; background-image: url(&quot;uploads/1641560450905.jpg&quot;); opacity: 1;" id="61d818c74766d0002aee07f2_image"></div><div _ngcontent-c1="" class=" display-none  Not-ok CancelDisplayNone uploadBtnFloat"><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzshape="circle" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-circle ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-picture ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"><!----></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-51 ng-star-inserted"><!----></nz-tooltip><nz-slider _ngcontent-c1="" class="ng-untouched ng-pristine ng-valid"><div class="ant-slider"><div class="ant-slider-rail"></div><nz-slider-track><div class="ant-slider-track" style="visibility: visible; left: 0%; width: 100%;"></div></nz-slider-track><!----><!----><nz-slider-handle class="ng-star-inserted"><!----><nz-tooltip _nghost-c19="" class="ng-tns-c19-52 ng-star-inserted"><div nz-tooltip="" class="ant-slider-handle" style="left: 100%;"></div><!----></nz-tooltip><!----></nz-slider-handle><!----></div></nz-slider></div></div></div><div _ngcontent-c1="" style="   " class="col-xs-10 overflowDemo col-sm-8 height-100 animated delay-05s textSlider fadeInLeft"><div _ngcontent-c1="" class="insideAlign"><!----><h1 _ngcontent-c1="" class="slide-h1 margin-top-30 outline0 fr-box fr-rtl fr-inline ng-star-inserted" role="application" style="color: rgb(0, 0, 0);"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p>הרשמה לתצפית</p></div></div></h1><!----><p _ngcontent-c1="" class="slide-p outline0 fr-box fr-rtl fr-inline ng-star-inserted" role="application" style="color: rgb(0, 0, 0);"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p dir="rtl">קיום התצפית מותנה במזג אוויר ובכמות מינימלית של נרשמים.</p></div></div></p><div _ngcontent-c1="" class="ctaEnterBTNContainer" hidden=""><div _ngcontent-c1="" class="cta2 border-radius-BB bg-color-primary glossyHover noSwipe fr-box fr-rtl fr-inline" id="enterBTN" style="display: inline-block; margin-top:10px;" role="application"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p>לחצו כאן כדי להירשם</p></div></div></div></div><div _ngcontent-c1="" class="ctaEnterBTNContainer"><div _ngcontent-c1="" class="cta2 cta3 border-radius-BB bg-color-secondary glossyHover noSwipe fr-box fr-rtl fr-inline" id="closeBTN" style="display: inline-block; margin-top:10px;" role="application"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p>לחצו כאן כדי להירשם</p></div></div></div></div><!----><!----><ul _ngcontent-c1="" class="collapse-list js-collapse-group ng-star-inserted"><!----><!----><button _ngcontent-c1="" class="display-none acor margincentercollaps CancelDisplayNone ant-btn ant-btn-dashed ant-btn-lg" nz-button="" nzsize="large" nztype="dashed"><!----><i _ngcontent-c1="" class="anticon anticon-plus ng-star-inserted" style="display: inline-block;"></i><span style=""> הוספת אקורדיון </span></button></ul></div><div _ngcontent-c1="" class="backgrounCCCCCCC rightSkew" style="background: rgb(223, 235, 249);"></div></div></div></div></div></div></div><div _ngcontent-c1="" class="item ng-star-inserted"><div _ngcontent-c1="" id=""><div _ngcontent-c1="" class="optionsControl-carusel display-none  CancelDisplayNone"><button _ngcontent-c1="" class="backgroundTransperent ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed"><!----><i _ngcontent-c1="" class="anticon anticon-left ng-star-inserted" style="color: rgb(0, 0, 0); display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-53 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" class="backgroundTransperent ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed"><!----><i _ngcontent-c1="" class="anticon anticon-eye-o ng-star-inserted" style="color: rgb(0, 0, 0); display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-54 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-edit ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-55 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-scan ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-56 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-download ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-57 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-copy ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-58 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" nz-button="" nz-popconfirm="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-delete ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-59 ng-star-inserted"><!----></nz-tooltip><nz-popconfirm _nghost-c20="" class="ng-tns-c20-60 ng-star-inserted"><!----></nz-popconfirm><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-plus ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-61 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg"><!----><i _ngcontent-c1="" class="anticon anticon-video-camera ng-star-inserted" hidden="" style="display: inline-block;"></i><span><i _ngcontent-c1="" class="anticon anticon-picture"></i></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-62 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="fas fa-globe ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-63 ng-star-inserted"><!----></nz-tooltip><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzplacement="bottom" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-solution ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-64 ng-star-inserted"><!----></nz-tooltip><nz-button-group _ngcontent-c1=""><div class="ant-btn-group"><input _ngcontent-c1="" class="colorPicker ant-btn-lg ant-btn-dashed" nz-tooltip="" nzplacement="bottom" style="background: rgb(223, 235, 249);"><nz-tooltip _nghost-c19="" class="ng-tns-c19-65 ng-star-inserted"><!----></nz-tooltip></div></nz-button-group></div><div _ngcontent-c1="" class="slider-conteudo-html"><div _ngcontent-c1="" class="container-fluid slider-grande-modelo1 background-carusel " style="background: rgb(223, 235, 249);"><div _ngcontent-c1="" class="container-carusel " style="background-image: url(&quot;uploads/1641560450905.jpg&quot;);"><div _ngcontent-c1="" class="col-xs-10 col-sm-4 padding-0 notSkewVID"><div _ngcontent-c1="" class="vidChoose"><video _ngcontent-c1="" class="video100  bgIMG" loop="" muted="" id="61d818c64766d0002aee07f1_vid1"><source _ngcontent-c1="" class="LinkUrlChange" type="video/mp4" src="uploads/1641560760937.mp4"> אנו מצטערים, הדפדפן שלך אינו תומך ב </video><div _ngcontent-c1="" class=" display-none  Not-ok CancelDisplayNone uploadBtnFloat"><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzshape="circle" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-circle ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-video-camera ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"><!----></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-66 ng-star-inserted"><!----></nz-tooltip></div></div><div _ngcontent-c1="" class="imgChoose" hidden=""><div _ngcontent-c1="" class="bgIMG img-responsive margin-top-20 LinkUrlChange" style="background-position: center center; background-image: url(&quot;uploads/1641560450905.jpg&quot;); opacity: 1;" id="61d818c64766d0002aee07f1_image"></div><div _ngcontent-c1="" class=" display-none  Not-ok CancelDisplayNone uploadBtnFloat"><button _ngcontent-c1="" nz-button="" nz-tooltip="" nzshape="circle" nzsize="large" nztype="dashed" class="ant-btn ant-btn-dashed ant-btn-circle ant-btn-lg ant-btn-icon-only"><!----><i _ngcontent-c1="" class="anticon anticon-picture ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"><!----></span></button><nz-tooltip _nghost-c19="" class="ng-tns-c19-67 ng-star-inserted"><!----></nz-tooltip><nz-slider _ngcontent-c1="" class="ng-untouched ng-pristine ng-valid"><div class="ant-slider"><div class="ant-slider-rail"></div><nz-slider-track><div class="ant-slider-track" style="visibility: visible; left: 0%; width: 100%;"></div></nz-slider-track><!----><!----><nz-slider-handle class="ng-star-inserted"><!----><nz-tooltip _nghost-c19="" class="ng-tns-c19-74 ng-star-inserted"><div nz-tooltip="" class="ant-slider-handle" style="left: 100%;"></div><!----></nz-tooltip><!----></nz-slider-handle><!----></div></nz-slider></div></div></div><div _ngcontent-c1="" style="   " class="col-xs-10 overflowDemo col-sm-8 height-100 animated delay-05s textSlider fadeInRight"><div _ngcontent-c1="" class="insideAlign"><!----><h1 _ngcontent-c1="" class="slide-h1 margin-top-30 outline0 fr-box fr-rtl fr-inline ng-star-inserted" role="application" style="color: rgb(0, 0, 0);"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p>תצפית אסטרונומית במצפה משואה</p></div></div></h1><!----><p _ngcontent-c1="" class="slide-p outline0 fr-box fr-rtl fr-inline ng-star-inserted" role="application" style="color: rgb(0, 0, 0);"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p>רוצים להצטרף לתצפית האסטרונומית שלנו?</p></div></div></p><div _ngcontent-c1="" class="ctaEnterBTNContainer"><div _ngcontent-c1="" class="cta2 border-radius-BB bg-color-primary glossyHover noSwipe fr-box fr-rtl fr-inline" id="enterBTN" style="display: inline-block; margin-top:10px;" role="application"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p>כן, אני רוצה להצטרף!</p></div></div></div></div><div _ngcontent-c1="" class="ctaEnterBTNContainer" hidden=""><div _ngcontent-c1="" class="cta2 cta3 border-radius-BB bg-color-secondary glossyHover noSwipe fr-box fr-rtl fr-inline" id="closeBTN" style="display: inline-block; margin-top:10px;" role="application"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p>כן, אני רוצה להצטרף!</p></div></div></div></div><!----><!----><ul _ngcontent-c1="" class="collapse-list js-collapse-group ng-star-inserted"><!----><li _ngcontent-c1="" class="collapse-list-element js-collapse-element animated fadeIn delay-15s ng-star-inserted" style="border-color: rgb(0, 0, 0);"><h2 _ngcontent-c1="" class="collapse-list-element__title js-collapse-element-trigger" style="color: rgb(0, 0, 0); border-color: rgb(0, 0, 0);"><span _ngcontent-c1="" class="spanP fr-box fr-rtl fr-inline" role="application"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p><strong>מתי התצפית הקרובה?</strong></p></div></div></span><span _ngcontent-c1="" class="plusBtnCollaple" style="color: rgb(0, 0, 0);"></span></h2><div _ngcontent-c1="" class="collapse-list-element__text-wrapper"><p _ngcontent-c1="" class="collapse-list-element__text word-break" style="color: rgb(0, 0, 0);"><span _ngcontent-c1="" class="fr-box fr-rtl fr-inline" role="application"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p>8 באוקטובר 2025 מצפה משואה 18:00-23:00</p></div></div></span></p></div><button _ngcontent-c1="" class="display-none CancelDisplayNone deletCollasSmall ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only" nz-button="" nz-popconfirm="" nzplacement="bottom" nzsize="large" nztype="dashed"><!----><i _ngcontent-c1="" class="anticon anticon-delete ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-popconfirm _nghost-c20="" class="ng-tns-c20-68 ng-star-inserted"><!----></nz-popconfirm></li><li _ngcontent-c1="" class="collapse-list-element js-collapse-element animated fadeIn delay-15s ng-star-inserted" style="border-color: rgb(0, 0, 0);"><h2 _ngcontent-c1="" class="collapse-list-element__title js-collapse-element-trigger" style="color: rgb(0, 0, 0); border-color: rgb(0, 0, 0);"><span _ngcontent-c1="" class="spanP fr-box fr-rtl fr-inline" role="application"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p><strong>למי זה מיועד?</strong></p></div></div></span><span _ngcontent-c1="" class="plusBtnCollaple" style="color: rgb(0, 0, 0);"></span></h2><div _ngcontent-c1="" class="collapse-list-element__text-wrapper"><p _ngcontent-c1="" class="collapse-list-element__text word-break" style="color: rgb(0, 0, 0);"><span _ngcontent-c1="" class="fr-box fr-rtl fr-inline" role="application"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p>למבוגרים ובני נוער. ניתן להביא גם ילדים שמתעניינים באסטרונומיה.</p></div></div></span></p></div><button _ngcontent-c1="" class="display-none CancelDisplayNone deletCollasSmall ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only" nz-button="" nz-popconfirm="" nzplacement="bottom" nzsize="large" nztype="dashed"><!----><i _ngcontent-c1="" class="anticon anticon-delete ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-popconfirm _nghost-c20="" class="ng-tns-c20-69 ng-star-inserted"><!----></nz-popconfirm></li><li _ngcontent-c1="" class="collapse-list-element js-collapse-element animated fadeIn delay-15s ng-star-inserted" style="border-color: rgb(0, 0, 0);"><h2 _ngcontent-c1="" class="collapse-list-element__title js-collapse-element-trigger" style="color: rgb(0, 0, 0); border-color: rgb(0, 0, 0);"><span _ngcontent-c1="" class="spanP fr-box fr-rtl fr-inline" role="application"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p><strong>על מה נצפה?</strong></p></div></div></span><span _ngcontent-c1="" class="plusBtnCollaple" style="color: rgb(0, 0, 0);"></span></h2><div _ngcontent-c1="" class="collapse-list-element__text-wrapper"><p _ngcontent-c1="" class="collapse-list-element__text word-break" style="color: rgb(0, 0, 0);"><span _ngcontent-c1="" class="fr-box fr-rtl fr-inline" role="application"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p>הסהר הדקיק של הירח, נוגה, צדק, שבתאי, כוכבים כפולים וצבירי כוכבים בהתאם לנראות ומזג אוויר. כולל הסבר שמיים והדרכה מקצועית.</p></div></div></span></p></div><button _ngcontent-c1="" class="display-none CancelDisplayNone deletCollasSmall ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only" nz-button="" nz-popconfirm="" nzplacement="bottom" nzsize="large" nztype="dashed"><!----><i _ngcontent-c1="" class="anticon anticon-delete ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-popconfirm _nghost-c20="" class="ng-tns-c20-70 ng-star-inserted"><!----></nz-popconfirm></li><li _ngcontent-c1="" class="collapse-list-element js-collapse-element animated fadeIn delay-15s ng-star-inserted" style="border-color: rgb(0, 0, 0);"><h2 _ngcontent-c1="" class="collapse-list-element__title js-collapse-element-trigger" style="color: rgb(0, 0, 0); border-color: rgb(0, 0, 0);"><span _ngcontent-c1="" class="spanP fr-box fr-rtl fr-inline" role="application"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p dir="rtl"><strong>כמה זה עולה?</strong></p></div></div></span><span _ngcontent-c1="" class="plusBtnCollaple" style="color: rgb(0, 0, 0);"></span></h2><div _ngcontent-c1="" class="collapse-list-element__text-wrapper"><p _ngcontent-c1="" class="collapse-list-element__text word-break" style="color: rgb(0, 0, 0);"><span _ngcontent-c1="" class="fr-box fr-rtl fr-inline" role="application"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p dir="rtl">80 ש"ח למשתתף.</p></div></div></span></p></div><button _ngcontent-c1="" class="display-none CancelDisplayNone deletCollasSmall ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only" nz-button="" nz-popconfirm="" nzplacement="bottom" nzsize="large" nztype="dashed"><!----><i _ngcontent-c1="" class="anticon anticon-delete ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-popconfirm _nghost-c20="" class="ng-tns-c20-71 ng-star-inserted"><!----></nz-popconfirm></li><li _ngcontent-c1="" class="collapse-list-element js-collapse-element animated fadeIn delay-15s ng-star-inserted" style="border-color: rgb(0, 0, 0);"><h2 _ngcontent-c1="" class="collapse-list-element__title js-collapse-element-trigger" style="color: rgb(0, 0, 0); border-color: rgb(0, 0, 0);"><span _ngcontent-c1="" class="spanP fr-box fr-rtl fr-inline" role="application"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p dir="rtl"><strong>מהי מדיניות הביטול?</strong></p></div></div></span><span _ngcontent-c1="" class="plusBtnCollaple" style="color: rgb(0, 0, 0);"></span></h2><div _ngcontent-c1="" class="collapse-list-element__text-wrapper"><p _ngcontent-c1="" class="collapse-list-element__text word-break" style="color: rgb(0, 0, 0);"><span _ngcontent-c1="" class="fr-box fr-rtl fr-inline" role="application"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p>ניתן לבטל השתתפות עד 8 ימים לפני מועד התצפית ללא עלות.<br>למבטלים 7 ימים לפני התצפית יוחזר רק 50% מהתשלום.<br>למבטלים יומיים לפני התצפית ופחות התשלום לא יוחזר.</p></div></div></span></p></div><button _ngcontent-c1="" class="display-none CancelDisplayNone deletCollasSmall ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only" nz-button="" nz-popconfirm="" nzplacement="bottom" nzsize="large" nztype="dashed"><!----><i _ngcontent-c1="" class="anticon anticon-delete ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-popconfirm _nghost-c20="" class="ng-tns-c20-72 ng-star-inserted"><!----></nz-popconfirm></li><li _ngcontent-c1="" class="collapse-list-element js-collapse-element animated fadeIn delay-15s ng-star-inserted" style="border-color: rgb(0, 0, 0);"><h2 _ngcontent-c1="" class="collapse-list-element__title js-collapse-element-trigger" style="color: rgb(0, 0, 0); border-color: rgb(0, 0, 0);"><span _ngcontent-c1="" class="spanP fr-box fr-rtl fr-inline" role="application"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><p><strong>איך מגיעים?</strong></p></div></div></span><span _ngcontent-c1="" class="plusBtnCollaple" style="color: rgb(0, 0, 0);"></span></h2><div _ngcontent-c1="" class="collapse-list-element__text-wrapper"><p _ngcontent-c1="" class="collapse-list-element__text word-break" style="color: rgb(0, 0, 0);"><span _ngcontent-c1="" class="fr-box fr-rtl fr-inline" role="application"><div class="fr-wrapper" dir="rtl"><div class="fr-element fr-view" dir="rtl" contenteditable="true" aria-disabled="false" spellcheck="true"><div data-testid="richTextElement"><p dir="rtl">ברכבים פרטיים. הוראות הגעה יימסרו לנרשמים במייל.</p></div><div data-mesh-id="comp-kteqhoo1inlineContent" data-testid="inline-content"><div data-mesh-id="comp-kteqhoo1inlineContent-gridContainer" data-testid="mesh-container-content"><a data-testid="link" href="https://api.whatsapp.com/send?phone=972587979471" target="_blank" title="דברו איתנו בווטסאפ!"></a></div></div></div></div></span></p></div><button _ngcontent-c1="" class="display-none CancelDisplayNone deletCollasSmall ant-btn ant-btn-dashed ant-btn-lg ant-btn-icon-only" nz-button="" nz-popconfirm="" nzplacement="bottom" nzsize="large" nztype="dashed"><!----><i _ngcontent-c1="" class="anticon anticon-delete ng-star-inserted" style="display: inline-block;"></i><span style="display: none;"></span></button><nz-popconfirm _nghost-c20="" class="ng-tns-c20-73 ng-star-inserted"><!----></nz-popconfirm></li><!----><button _ngcontent-c1="" class="editColla acor margincentercollaps display-none CancelDisplayNone ant-btn ng-star-inserted ant-btn-dashed ant-btn-lg" data-edit="0" nz-button="" nzsize="large" nztype="dashed"><!----><i _ngcontent-c1="" class="anticon anticon-edit ng-star-inserted" style="display: inline-block;"></i><span style=""> עריכת אקורדיון</span></button><button _ngcontent-c1="" class="display-none acor margincentercollaps CancelDisplayNone ant-btn ant-btn-dashed ant-btn-lg" nz-button="" nzsize="large" nztype="dashed"><!----><i _ngcontent-c1="" class="anticon anticon-plus ng-star-inserted" style="display: inline-block;"></i><span style=""> הוספת אקורדיון </span></button></ul></div><div _ngcontent-c1="" class="backgrounCCCCCCC leftSkew" style="background: rgb(223, 235, 249);"></div></div></div></div></div></div></div></div></div></div><svg _ngcontent-c1="" class="svg-clip" height="0" width="0"><defs _ngcontent-c1=""><clipPath _ngcontent-c1="" clipPathUnits="objectBoundingBox" id="clipleftSkew"><polygon _ngcontent-c1="" fill="none" points="0.1,0 1,0 1,1 1,1 0,1 "></polygon></clipPath><clipPath _ngcontent-c1="" clipPathUnits="objectBoundingBox" id="cliprightSkew"><polygon _ngcontent-c1="" fill="none" points="0,0 .95,0 1,1 1,1 0,1 "></polygon></clipPath></defs></svg></article>
+  <div class="endPage"></div>
+  <footer id="main-footer">
+    <div class="container">
+      <img class="menu-logo fo" src="uploads/1641560257462.png" alt="logo">
+    </div>
+  </footer>
+
+  </div>
+
+
+
+</section>
+
+
+<script src="js/app.min.js"></script>
+<script>
+/*
+var x = document.getElementsByClassName("LinkUrlChange");
+var z = document.getElementById("LinkUrl").innerHTML;
+for(var i = 0; i < x.length; i++)
+{
+
+  
+  
+  if(x[i].src){
+    x[i].src = x[i].src.replace(z,"");
+  }else if(x[i].href){
+    x[i].href = x[i].href.replace(z,"");
+  }else{
+	  x[i].style.backgroundImage = x[i].style.backgroundImage.replace(z,"");
+  }
+  
+  }
+*/
+
+
+  
+  
+
+
+  $(document).ready(function(){
+
+    $(".noshow").removeClass("noshow");
+$(".ansCheck2").addClass("ansCheck");
+ $(".overflowDemo").removeClass("overflowDemo");
+ $('.collapse-list-element__text').addClass('position-fixed');
+console.log("haaaaaaa----")
+
+
+
+
+console.log(caruselIRight[0].style.display);
+
+  $(document).on( "click",".js-collapse-element",function(e) {
+   
+    if($(this).hasClass("collapse-list-element--expanded")){
+      $(".js-collapse-element").removeClass("collapse-list-element--expanded");
+    }else{
+      $(".js-collapse-element").removeClass("collapse-list-element--expanded");
+      $(this).toggleClass("collapse-list-element--expanded");
+    }
+
+  })
+})
+</script>
+
+
+  <style>
+  /* hebrew */ @font-face {     font-family: 'Assistant';     font-style: normal;     font-weight: 400;     font-display: swap;     src: local('Assistant'), local('Assistant-Regular'), url(./fonts/theme/2sDcZGJYnIjSi6H75xkzamW5Kb8VZBHR.woff2) format('woff2');     unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;   }   /* latin */   @font-face {     font-family: 'Assistant';     font-style: normal;     font-weight: 400;     font-display: swap;     src: local('Assistant'), local('Assistant-Regular'), url(./fonts/theme/2sDcZGJYnIjSi6H75xkzaGW5Kb8VZA.woff2) format('woff2');     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;   }   /* hebrew */   @font-face {     font-family: 'Assistant';     font-style: bold;     font-weight: 700;     font-display: swap;     src: local('Assistant Bold'), local('Assistant-Bold'), url(./fonts/theme/2sDZZGJYnIjSi6H75xk700CsBp0YTivYthYl.woff2) format('woff2');     unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;   }   /* latin */   @font-face {     font-family: 'Assistant';     font-style: bold;     font-weight: 700;     font-display: swap;     src: local('Assistant Bold'), local('Assistant-Bold'), url(./fonts/theme/2sDZZGJYnIjSi6H75xk700CsBJ0YTivYtg.woff2) format('woff2');     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;   }  body, html, .clientFont button, .clientFont input, .clientFont optgroup, .clientFont select, .clientFont textarea, .template-container, .tempalte-h3, .template-p-with-h3, .fontSize600, .chapterNameInput, .tempalte-2p-left, .tempalte-2p-right, .template-p, .tempalte-h4, .template-note-circle, .template-quote-autor, .template-small-circle, .template-note-container, .fr-element, .fr-element p, .fr-element strong, .fr-element u, .fr-element s, .fr-element a, .fr-element line, li.templater-li-numbers::before, a, .P-Poa, .P-Poa span, .P-Poa p, .template-container p, .fr-element p, .fr-element, .fr-view, .fr-view p, .H1-Poa, .prevchapter, .nextchpatername, .font-size-18px, h1 { 	box-sizing: border-box; 	-moz-box-sizing: border-box; 	-webkit-box-sizing: border-box; 	font-family: 'Assistant' !important; 	font-weight: normal; 	font-style: normal; 	/* direction: rtl;          line-height: 1.5;*/ } a, li, span, p, .P-Poa, .P-Poa span, .P-Poa p { 	font-family: 'Assistant'; 	font-weight: normal; 	font-style: normal; } strong { 	font-family: 'Assistant'!important; 	font-weight: bold !important; } .font-bold-p p { 	font-family: 'Assistant'!important; 	font-weight: bold !important; } .font-light-p p { 	font-family: 'Assistant'!important; } .qut-font { 	font-family: "Assistant"; } .MarkPro { 	font-family: "Assistant"; } .MarkWebProBook-font { 	font-family: "Assistant", sans-serif; }
+
+  
+
+
+ body .chet-full:after {
+    border-right-color: #e7c584;
+}
+
+
+  body .panel-heading[aria-expanded="true"]{
+    border-color: #202d90!important;
+  }
+body a:hover{
+    color: #202d90 !important;
+  }
+
+  html body .ratingText {
+    font-size: 20px !important;
+    color: #000000;
+
+  }
+ body .panel-heading.transition-05.collapsed.tabs.activeTab{
+    border-right: 2px solid #202d90 !important;
+  }
+
+ body .line li:before,
+ body .circle li:before,
+ body .bulets li:before,
+ body .chet-outline
+{
+background: #202d90 !important;
+}
+
+body .circle li:before {right: -20px;
+}
+
+body .bulets li:before {right: -10px;
+}
+
+
+body .chet-outline:after {
+  border-left-color: #202d90;
+
+}
+
+button.ansans{
+  right: -20px;
+      }
+      button.ansans2{
+  right: -20px;
+      }
+
+  .template-container{
+    margin: 22px 0px;
+  }
+  elementMargin
+
+
+   html body .themeControl-modal{
+      background:#ffffff !important;
+    }
+
+    .box-shadow {
+      box-shadow:0 2px 6px rgba(0, 0, 0, 0.4) !important;
+  }
+  
+
+    .progMenuLi {
+      right: 0px;
+  }
+
+
+    .template-container {
+      direction: rtl !important;
+    }
+
+
+    .btn.cta.ansCheck2{
+      direction: rtl !important;
+    }
+    
+
+    html,
+    body {
+  direction: rtl !important;
+  text-align: right !important;
+  font-size: 15px;
+  color: #000000 !important;
+  word-break: break-word !important;
+  background-color:  #ffffff !important;
+    }
+
+    html body p {
+      font-size: 20px !important;
+      word-break: break-word !important;
+  }
+
+  .menu-header-bg h1{
+    text-align:  right !important;
+    direction: rtl !important;
+  }
+
+  .border-radius-BB {
+    border-radius: 20pxpx !important;
+}
+
+.border-radius-BB::after {
+  border-radius: 20pxpx;
+}
+
+.border-radius-BB-right{
+  border-radius: 0px 20pxpx 20pxpx 0px;
+}
+
+/* primary */
+
+.bg-color-primary {
+  background: #202d90 !important;
+  background-color: #202d90 !important;
+}
+
+
+body .carousel-indicators .active{
+  background: #202d90 !important;
+  background-color: #202d90 !important;
+}
+
+.hoverBgPrimary:hover {
+background: #202d90!important;
+color: white;
+}
+
+
+/* secondary */
+
+.bg-color-secondary,
+.chet-full {
+  background: #e7c584!important;
+  color: white !important;
+}
+
+
+.hoverBgSecondary:hover {
+  background: #e7c584!important;
+  color: white;
+}
+
+/* lock-chapter */
+
+.lock-chapter:hover {
+  background: null!important;
+  color: #e7c584!important;
+}
+
+/* chapter title background */
+
+.bg-light-color {
+background: null!important;
+}
+
+.border-light-color {
+border: 1px solid null!important;
+}
+
+.bg-light-color-top {
+background: #eeeeee;
+}
+
+/* course Title */
+
+.bigFont {
+font-size: 3.8rem!important;
+font-weight: bold;
+text-align:  right !important;
+margin-left: 0px;
+margin-right: 0px;
+}
+
+/* chapter Title  & big title block*/
+
+.chapter-title{
+font-size: 2.8rem!important;
+}
+
+/* chapter secondary Title */
+
+html body .tempalte-h4 p{
+font-size: 1.8rem!important;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+margin-top: 0;
+margin-bottom: .5em;
+color: #000000;
+font-weight: 500;
+}
+
+.panel-heading.transition-05.collapsed div{
+  font-size: 20px !important;
+    word-break: break-word !important;
+}
+
+body .panel-heading.transition-05.collapsed.tabs  {
+  float: right!important;
+}
+
+
+  </style>   
+</body>
+
+</html>
+        
